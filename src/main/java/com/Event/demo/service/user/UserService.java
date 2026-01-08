@@ -11,5 +11,5 @@ public interface UserService
     User changeUserRole(long userId,Role role);
     void enableUser(long userId);
     void disableUser(long userId);
-
+    User createScanner(User user);
 }

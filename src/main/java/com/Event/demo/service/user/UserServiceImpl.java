@@ -77,4 +77,11 @@ public class UserServiceImpl implements UserService {
         user.setRole(role);
         return userRepository.save(user);
     }
+    @Override
+    public User createScanner(User user) {
+        user.setRole(Role.SCANNER);
+        user.setEnabled(true);
+        return userRepository.save(user);
+    }
+
 }
